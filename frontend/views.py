@@ -8,3 +8,4 @@ from django.shortcuts import render_to_response
 def index(request):
     chords = Chord.objects.all()
     return render_to_response('base.html', {'chords': chords,})
+    

@@ -1,0 +1,1 @@
+Just a simple chord test for musicians. You need to guess all notes of the chord and then the app will show you the right one.
