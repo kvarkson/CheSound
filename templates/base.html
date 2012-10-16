@@ -221,38 +221,39 @@
 <script>
 	
 	var chords = Object();
-	var currentChord = 'C';
+	var chordNames = Array()
+	var chord = '';
 	var goForANewChord = false;
 	{% for chord in chords %} 
 		chords["{{ chord.name }}"] = ["{{ chord.root }}", 
 		"{{ chord.first }}", "{{ chord.second }}", "{{ chord.third }}"];
+		chordNames.push("{{ chord.name }}");
 	{% endfor %}
+	chord = chordNames[0];
 	$(function() {
 		
 		$('footer').bind('click', function() {
-  			for(var chord in chords) {
-  				if (chord !== currentChord) {
-  					$("#question-box").html('<h2>' + currentChord + '</h2>');
-  					if(goForANewChord || ($('#answer').html() === '')){
-  						$("#answer").html('Click to show right answer');
-  					}
-					currentChord = chord;
-  				}
 				
-			}
+				if(goForANewChord || ($('#answer').html() === '')){
+					chord = chordNames[(Math.round((Math.random()*chordNames.length-1)+1))]
+					$("#question-box").html('<h2>' + chord + '</h2>');
+					$("#answer").html('Click to show right answer');
+				}
+				
 		});
 
 		$("#answer").click(function() {
 			if($("#answer").html() === 'Click to show right answer') {
-				$('#' + chords[currentChord][0]).css("background","red");
-				$('#' + chords[currentChord][1]).css("background","red");
-				$('#' + chords[currentChord][2]).css("background","red");
-				$('#' + chords[currentChord][3]).css("background","red");
+				$('#' + chords[chord][0]).css("background","red");
+				$('#' + chords[chord][1]).css("background","red");
+				$('#' + chords[chord][2]).css("background","red");
+				$('#' + chords[chord][3]).css("background","red");
 				goForANewChord = false;
 				$("#answer").html('Continue');
 			} else {
 				goForANewChord = true;
 				$('.white').css("background","#fff");
+				$('.black').css("background","#000");
 				$('footer').trigger('click');
 			}
 			
