@@ -235,7 +235,8 @@
 		$('footer').bind('click', function() {
 				
 				if(goForANewChord || ($('#answer').html() === '')){
-					chord = chordNames[(Math.round((Math.random()*chordNames.length-1)+1))]
+					var index = (Math.round((Math.random()*(chordNames.length-1))));
+					chord = chordNames[index];
 					$("#question-box").html('<h2>' + chord + '</h2>');
 					$("#answer").html('Click to show right answer');
 				}
@@ -254,7 +255,6 @@
 				goForANewChord = true;
 				$('.white').css("background","#fff");
 				$('.black').css("background","#000");
-				$('footer').trigger('click');
 			}
 			
 		});
