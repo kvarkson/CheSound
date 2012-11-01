@@ -4,13 +4,13 @@
 html, body {
 	height: 100%;
 	font-family: Philosopher, Tahoma;
-  background-color: #F2F2F2;
+ 	background-color: #F2F2F2;
 }
 
 body {
-		overflow-y: hidden;
-		padding-top: 20px;
-		width: 100%;
+	overflow-y: hidden;
+	padding-top: 20px;
+	width: 100%;
 }
 
 h1 {
@@ -18,18 +18,18 @@ h1 {
 }
 
 body.FogOfWar {
-  background-color: #0F0F0F;
-  position: fixed;
-  width: 100%:
+  	background-color: #0F0F0F;
+  	position: fixed;
+	width: 100%:
 }
 body.pinkPanter {
-  background-color: #FFC0CB;
+	background-color: #FFC0CB;
 }
 body.GoldernBrown {
-  background-color: #FFD700;
+	background-color: #FFD700;
 }
 body.YellowSubmarine {
-  background-color: #E3DD6A;
+	background-color: #E3DD6A;
 }
 body.SilverWings {
 	background-color: #C0C0C0;
@@ -52,15 +52,15 @@ nav.right {
 #piano {
     background-color: #272927;
     color: #000000;
-    margin-left:  20px;
-		margin-right: 20px;
+    margin-left: 60px;
+	margin-right: 20px;
     margin-top: -200px;
     position: absolute;
     text-align: center;
     top: 350px;
-		width: 1530px;
-		padding: 10px 10px 13px;
-		display: block;
+	width: 1158px;
+	padding: 10px 10px 13px;
+	display: block;
 }
 
 #pianoBody {
@@ -78,7 +78,7 @@ nav.right {
     top: 1px;
     width: 100%;
     z-index: 100;
-		display: block;
+	display: block;
 }
 
 .octave {
@@ -92,11 +92,11 @@ nav.right {
 
 .white {
 	float: left;
-	width: 88px;
-	height: 460px;
-  background-color: #F4F4F4;
-  border: 1px solid #626262;
-  position: relative;
+	width: 66px;
+	height: 345px;
+  	background-color: #F4F4F4;
+  	border: 1px solid #626262;
+  	position: relative;
 	-moz-border-radius: 0 0 15px 15px;
 	border-radius: 0 0 15px 15px; 
 	background-image: -webkit-gradient(center bottom , #FFFFFF 90%, #CCCCCC 100%);
@@ -111,7 +111,7 @@ nav.right {
 
 div.white:active,
 div.white.pressed {
-  border: 1px solid #343434;
+  	border: 1px solid #343434;
 	background-image: -webkit-gradient(center bottom , #FFFFFF 90%, #CCCCCC 100%);
 	-webkit-box-shadow: 0 -5px 20px -3px #272927 inset;
 	
@@ -124,15 +124,15 @@ div.white.pressed {
 
 .black {
 	float: left;
-	width: 44px;
-	height: 320px;
-  background-color: #000000;
-  border-bottom: 2px solid #000;
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
-  position: absolute;
-  top: 6px;
-  z-index: 100;
+	width: 33px;
+	height: 240px;
+  	background-color: #000000;
+  	border-bottom: 2px solid #000;
+  	border-left: 2px solid #000;
+  	border-right: 2px solid #000;
+  	position: absolute;
+  	top: 6px;
+  	z-index: 100;
 	-moz-border-radius: 0 0 5px 5px;
 	border-radius: 0 0 5px 5px; 
 	border-top: 0px;
@@ -143,8 +143,8 @@ div.white.pressed {
 
 div.black:active,
 div.black.pressed {
-  border: 1px solid #CECECE;
-  border-top: 1px solid #626262;
+  	border: 1px solid #CECECE;
+  	border-top: 1px solid #626262;
 	-moz-box-shadow: 0 0 6px 7px #303030 inset, 0 -5px #F7F7F7 inset;
 	-webkit-box-shadow: 0 0 6px 7px #303030 inset, 0 -5px #F7F7F7 inset;
 	box-shadow: 0 0 6px 7px #303030 inset, 0 -5px #F7F7F7 inset;
@@ -155,19 +155,19 @@ div.flats {
 }
 
 div.flats :nth-child(1) {
-	margin-left: 67px;
+	margin-left: 50.25px;
 }
 div.flats :nth-child(2) {
-	margin-left: 157px;
+	margin-left: 117.75px;
 }
 div.flats :nth-child(3) {
-	margin-left: 338px;
+	margin-left: 253.5px;
 }
 div.flats :nth-child(4) {
-	margin-left: 428px;
+	margin-left: 321px;
 }
 div.flats :nth-child(5) {
-	margin-left: 517px;
+	margin-left: 387.75px;
 }
 
 
@@ -203,14 +203,14 @@ div.flats :nth-child(5) {
 	text-shadow: 2px 2px 0 #B31706;
 }
 .black .keyname {
-  font-size: 1.6em;
+  	font-size: 1.6em;
 	margin: 233px 0 0 0;
 	color: #ff9000;
 	text-shadow: 1px 1px 0 #7E6D1F;
 }
 
 .black .kbkeyname {
-  font-size: 1.6em;
+  	font-size: 1.6em;
 	margin: 233px 0 0 0;
 	color: #9C0413;
 	text-shadow: 1px 1px 0 #B31706;
@@ -247,7 +247,7 @@ div.black div.kbkeyname {
 
 footer {
 	text-align: center;
-    top: 650px;
+    top: 550px;
     font-family: Tahoma;
     font-size: 19px;
     padding: 10px 0;
