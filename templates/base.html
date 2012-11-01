@@ -217,7 +217,6 @@
 	<p>Try the chord: </p>
 	<div id="question-box"><a>Click to start</a></div>
 	<a id="answer"></a>
-	<div id="testDiv" style="background:green; width:100px; height:30px; top:570px;"></div>
 </footer>
 <script>
 	
@@ -237,7 +236,6 @@
 				
 				if(goForANewChord || ($('#answer').html() === '')){
 					var index = (Math.round((Math.random()*(chordNames.length-1))));
-					$("#testDiv").html(index.toString() + ', ' + (chordNames.length-1).toString());
 					chord = chordNames[index];
 					$("#question-box").html('<h2>' + chord + '</h2>');
 					$("#answer").html('Click to show right answer');
